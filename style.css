@@ -84,8 +84,8 @@ h3:hover {
 }
 
 .btn-primary:hover {
-  box-shadow: 0 0 6px 0 rgba(152, 88, 208, 0.5);
-  color: #ffffff;
+  box-shadow: 0 0 16px 0 rgba(151, 83, 211, 0.5);
+  color: rgb(140, 248, 243);
   border: solid 3px;
   font-weight: 800;
   font-size: 19px;
