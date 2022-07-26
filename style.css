@@ -1,4 +1,92 @@
+:root {
+  --heading-font-family: Playfair display, serif;
+  --default-font-family: Poppins, sans-serif;
+}
+
+body {
+  background-image: url(body.png), linear-gradient(110deg, #9bf7d7, #eeaefa);
+  color: #272142;
+}
+
+.container {
+  margin-top: 120px;
+  text-align: center;
+  line-height: 1.5;
+  background: transparent;
+}
+
 h1 {
-  font-family: Playfair display;
+  font-family: var(--heading-font-family);
+  font-weight: 700;
+  font-size: 50px;
+  letter-spacing: 1px;
+}
+
+h1:hover {
+  background: -webkit-linear-gradient(101deg,  #1daf7c, #9900b4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 52px;
+  letter-spacing: 2px;
+}
+
+h2 {
+  font-family: var(--heading-font-family);
   font-weight: 600;
+  margin-top: 20px;
+  font-size: 33px;
+  letter-spacing: 1px;
+}
+
+h2:hover {
+  background: -webkit-linear-gradient(101deg, #1daf7c, #9900b4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 37px;
+  letter-spacing: 2px;
+}
+
+h3 {
+  font-family: var(--heading-font-family);
+  font-weight: 600;
+  margin-top: 20px;
+  font-size: 33px;
+  letter-spacing: 1px;
+}
+
+h3:hover {
+  background: -webkit-linear-gradient(101deg, #1daf7c, #9900b4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 35px;
+  letter-spacing: 2px;
+  font-weight: 800;
+}
+
+.btn-primary {
+  font-weight: 600;
+  font-size: 17px;
+  color: #0d0a19;
+  font-family: var(--heading-font-family);
+  letter-spacing: 1px;
+  margin-top: 30px;
+  margin-bottom: 362px;
+  padding: 15px 30px;
+  border-radius: 30px;
+  box-shadow: 2px 1000px 1px rgb(231, 248, 245) inset;
+  border: solid 3px transparent;
+  background-image: linear-gradient(
+      rgba(255, 10, 10, 0),
+      rgba(255, 255, 255, 0)
+    ),
+    linear-gradient(101deg, #b26fc3, #7abaa4);
+  background-origin: border-box;
+}
+
+.btn-primary:hover {
+  box-shadow: 0 0 6px 0 rgba(152, 88, 208, 0.5);
+  color: #ffffff;
+  border: solid 3px;
+  font-weight: 800;
+  font-size: 19px;
 }
