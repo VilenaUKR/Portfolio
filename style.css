@@ -22,7 +22,7 @@ h1 {
   letter-spacing: 1px;
   width: auto;
   opacity: 0;
-  animation: ani 2s ease-in-out forwards 2.1s;
+  animation: ani 2s ease-in-out forwards 4s;
 }
 
 h1:hover {
@@ -30,7 +30,6 @@ h1:hover {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 52px;
-  letter-spacing: 2px;
 }
 
 h2 {
@@ -40,15 +39,14 @@ h2 {
   font-size: 33px;
   letter-spacing: 1px;
   opacity: 0;
-  animation: ani 2s ease-in-out forwards 2.1s;
+  animation: ani 2s ease-in-out forwards 4s;
 }
 
-.toHoverH2:hover {
+h2:hover {
   background: -webkit-linear-gradient(101deg, #1daf7c, #9900b4);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 37px;
-  letter-spacing: 2px;
 }
 
 h3 {
@@ -58,7 +56,7 @@ h3 {
   font-size: 33px;
   letter-spacing: 1px;
     opacity: 0;
-    animation: ani 2s ease-in-out forwards 2.1s;
+    animation: ani 2s ease-in-out forwards 4s;
 }
 
 h3:hover {
@@ -66,7 +64,6 @@ h3:hover {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 35px;
-  letter-spacing: 2px;
   font-weight: 800;
 }
 
@@ -86,22 +83,16 @@ position: fixed;
  letter-spacing: 1px;
  width: auto;
  opacity: 0;
-   animation: an 2s ease-in-out;
+   animation: an 4s ease-in-out;
  }
 
 @keyframes an {
   100% {opacity: 0.8;}
- from {background: -webkit-linear-gradient(101deg, #1daf7c, #9900b4); -webkit-background-clip: text;
+ from {background: -webkit-linear-gradient(101deg, #1daf7c, #9a17b1); -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;}
+ to {background: -webkit-linear-gradient(101deg, #01a66c, #85019c); -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;}}
   
-  .handEmoji {
-      opacity: 0;
-      animation: anima 2s ease-in-out; }
-      
-      @keyframes anima {
-  100% {opacity: 0.8;}}
-
-
 .btn-primary {
   font-weight: 600;
   font-size: 17px;
@@ -121,7 +112,7 @@ position: fixed;
     linear-gradient(101deg, #b26fc3, #7abaa4);
   background-origin: border-box;
     opacity: 0;
-  animation: anim 1.8s forwards 3.5s;
+  animation: anim 2s forwards 5.5s;
 }
 
 .btn-primary:hover {
