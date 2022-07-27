@@ -2,17 +2,17 @@
   --heading-font-family: Playfair display, serif;
   --default-font-family: Poppins, sans-serif;
 }
-
+ 
 body {
   background-image: url(body.png), linear-gradient(110deg, #9bf7d7, #eeaefa);
   color: #272142;
 }
 
 .container {
-  margin-top: 120px;
-  text-align: center;
-  line-height: 1.5;
-  background: transparent;
+    margin-top: 120px;
+    text-align: center;
+    line-height: 1.5;
+    background: transparent;
 }
 
 h1 {
@@ -20,6 +20,9 @@ h1 {
   font-weight: 700;
   font-size: 50px;
   letter-spacing: 1px;
+  width: auto;
+  opacity: 0;
+  animation: ani 2s ease-in-out forwards 2.1s;
 }
 
 h1:hover {
@@ -33,12 +36,14 @@ h1:hover {
 h2 {
   font-family: var(--heading-font-family);
   font-weight: 600;
-  margin-top: 20px;
+  margin-top: 200px;
   font-size: 33px;
   letter-spacing: 1px;
+  opacity: 0;
+  animation: ani 2s ease-in-out forwards 2.1s;
 }
 
-h2:hover {
+.toHoverH2:hover {
   background: -webkit-linear-gradient(101deg, #1daf7c, #9900b4);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -52,6 +57,8 @@ h3 {
   margin-top: 20px;
   font-size: 33px;
   letter-spacing: 1px;
+    opacity: 0;
+    animation: ani 2s ease-in-out forwards 2.1s;
 }
 
 h3:hover {
@@ -63,17 +70,49 @@ h3:hover {
   font-weight: 800;
 }
 
+@keyframes ani {
+  100% {opacity: 1;}
+ from {background: -webkit-linear-gradient(101deg, #1daf7c, #9900b4); -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;}
+   to {font-family: var(--heading-font-family)}}
+
+   h4 {
+position: fixed;
+ right: 0%;
+ left: 0%;
+ font-family: var(--heading-font-family);
+ font-weight: 700;
+ font-size: 150px;
+ letter-spacing: 1px;
+ width: auto;
+ opacity: 0;
+   animation: an 2s ease-in-out;
+ }
+
+@keyframes an {
+  100% {opacity: 0.8;}
+ from {background: -webkit-linear-gradient(101deg, #1daf7c, #9900b4); -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;}}
+  
+  .handEmoji {
+      opacity: 0;
+      animation: anima 2s ease-in-out; }
+      
+      @keyframes anima {
+  100% {opacity: 0.8;}}
+
+
 .btn-primary {
   font-weight: 600;
   font-size: 17px;
   color: #0d0a19;
   font-family: var(--heading-font-family);
   letter-spacing: 1px;
-  margin-top: 30px;
-  margin-bottom: 362px;
+  margin-top: 50px;
+  margin-bottom: 260px;
   padding: 15px 30px;
   border-radius: 30px;
-  box-shadow: 2px 1000px 1px rgb(231, 248, 245) inset;
+  box-shadow: 2px 100px 1px rgb(231, 248, 245) inset;
   border: solid 3px transparent;
   background-image: linear-gradient(
       rgba(255, 10, 10, 0),
@@ -81,12 +120,19 @@ h3:hover {
     ),
     linear-gradient(101deg, #b26fc3, #7abaa4);
   background-origin: border-box;
+    opacity: 0;
+  animation: anim 1.8s forwards 3.5s;
 }
 
 .btn-primary:hover {
-  box-shadow: 0 0 16px 0 rgba(151, 83, 211, 0.5);
+  box-shadow: 0 0 15px 0 #894994;
   color: rgb(140, 248, 243);
   border: solid 3px;
   font-weight: 800;
   font-size: 19px;
+}
+
+@keyframes anim {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
 }
