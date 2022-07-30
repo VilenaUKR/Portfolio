@@ -122,7 +122,7 @@ h3 {
 
 .projects-header,
 .about-me-header {
-  margin-bottom: 70px;
+  margin-bottom: 50px;
   margin-top: 50px;
   font-family: var(--heading-font-family);
   font-weight: 800;
@@ -144,13 +144,19 @@ h3 {
   text-align: center;
 }
 
-#project-img {
+#hero-img,
+.project-img-bg {
   border: solid 7px transparent;
   background-image: url(/src/images/body.png),
     linear-gradient(rgba(255, 10, 10, 0), rgba(255, 255, 255, 0)),
-    linear-gradient(101deg, #b26fc3, #7abaa4);
+    linear-gradient(101deg, #bb85c8, #84baa7);
   background-origin: border-box;
-  padding: 10px;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+#project-img {
+  border-radius: 10px;
 }
 
 h4 {
@@ -159,9 +165,9 @@ h4 {
   font-size: 32px;
   letter-spacing: 1px;
   margin-top: 10px;
-       background: -webkit-linear-gradient(101deg, #028063, #b0029e);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(101deg, #028063, #b0029e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 p {
@@ -197,47 +203,55 @@ p {
       rgba(255, 255, 255, 0)
     ),
     linear-gradient(101deg, #b26fc3, #7abaa4);
-       color: rgb(255, 255, 255);
-  }
+  color: rgb(255, 255, 255);
+}
 
+#hero-img {
+  border-radius: 50%;
+  float: right;
+  display: block;
+  margin: 0px 0px 20px;
+  width: 100%;
+}
+
+.projects-link {
+  text-decoration: none;
+  color: var(--main-color);
+  font-weight: 700;
+  opacity: 0.9;
+}
+
+.projects-link:hover {
+  background: -webkit-linear-gradient(101deg, #1daf7c, #9900b4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+
+.icons-header {
+  color: var(--main-color);
+  margin-top: 40px;
+  margin-bottom: 10px;
+  font-family: var(--heading-font-family);
+  font-weight: 700;
+  font-size: 28px;
+  letter-spacing: 1px;
+  opacity: 0.9;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  color: var(--main-color);
+  font-family: var(--secondary-font-family);
+  font-size: 14px;
+}
 
 @media (max-width: 900px) {
-  body {
-    background-image: url(/src/images/body.png),
-      linear-gradient(110deg, #9bf7d7, #eeaefa);
-    color: #272142;
-    background-size: auto;
-    text-align: center;
-    padding: 10px;
-  }
-
   .welcome {
-    position: absolute;
-    text-align: center;
     margin-top: 100px;
-    font-family: var(--heading-font-family);
-    font-weight: 700;
     font-size: 50px;
-    letter-spacing: 1px;
-    width: auto;
-    opacity: 0;
-    animation: an 4s ease-in-out;
-  }
-
-  @keyframes an {
-    100% {
-      opacity: 0.8;
-    }
-    from {
-      background: -webkit-linear-gradient(101deg, #1daf7c, #9a17b1);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-    to {
-      background: -webkit-linear-gradient(101deg, #01a66c, #85019c);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
   }
 
   .hero {
@@ -247,119 +261,43 @@ p {
   }
 
   h1 {
-    font-family: var(--heading-font-family);
-    font-weight: 700;
     font-size: 40px;
   }
 
-  h1:hover {
-    background: -webkit-linear-gradient(101deg, #1daf7c, #9900b4);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    cursor: default;
-  }
-
   h2 {
-    font-family: var(--heading-font-family);
-    font-weight: 600;
-    margin-top: 200px;
     font-size: 28px;
   }
 
   h3 {
-    font-family: var(--heading-font-family);
-    font-weight: 600;
     margin-top: 20px;
     font-size: 28px;
-  }
-
-  h1,
-  h2,
-  h3 {
-    letter-spacing: 1px;
-    opacity: 0;
-    animation: ani 2s ease-in-out forwards 4s;
-  }
-  @keyframes ani {
-    100% {
-      opacity: 1;
-    }
-    from {
-      background: -webkit-linear-gradient(101deg, #1daf7c, #9900b4);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-    to {
-      font-family: var(--heading-font-family);
-    }
   }
 
   .projects-header,
   .about-me-header {
     margin-top: 20px;
-    font-family: var(--heading-font-family);
     font-weight: 700;
     font-size: 40px;
-    text-align: center;
-    letter-spacing: 1px;
-  }
-
-  .row {
-    display: flex;
-    justify-content: space-around;
   }
 
   #project-description {
-    background-image: url(/src/images/body1.png);
-    border-radius: 10px;
-    padding: 8px;
-    text-align: center;
     margin-top: 20px;
   }
 
-  #project-img {
-    border: solid 7px transparent;
-    background-image: url(/src/images/body.png),
-      linear-gradient(rgba(255, 10, 10, 0), rgba(255, 255, 255, 0)),
-      linear-gradient(101deg, #b26fc3, #7abaa4);
-    padding: 10px;
+  .project-img-bg {
     margin-top: 20px;
   }
 
   h4 {
-    font-family: var(--heading-font-family);
-    font-weight: 700;
     font-size: 24px;
-    letter-spacing: 1px;
-      background: -webkit-linear-gradient(101deg, #028063, #b0029e);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
   }
 
   p {
     font-size: 16px;
-    padding: 3px;
-    margin-top: -15px !important;
-    margin-bottom: -15px !important;
   }
 
   .primary-link {
-    font-weight: 600;
     font-size: 14px;
-    text-decoration: none;
-    color: #0d0a19;
-    font-family: var(--heading-font-family);
-    letter-spacing: 1px;
-    margin-top: 50px;
     padding: 10px 20px;
-    border-radius: 30px;
-    box-shadow: 2px 100px 1px rgb(231, 248, 245) inset;
-    border: solid 3px transparent;
-    background-image: linear-gradient(
-        rgba(255, 10, 10, 0),
-        rgba(255, 255, 255, 0)
-      ),
-      linear-gradient(101deg, #b26fc3, #7abaa4);
-    background-origin: border-box;
   }
 }
