@@ -53,9 +53,27 @@ h1 {
   font-size: 75px;
 }
 
-#linkedin-link {
-  text-decoration: none;
+.row#contacts{
+  display: flex;
+  flex-direction: column;
+   font-size: 30px;
   color: #272142;
+   font-family: var(--heading-font-family);
+  font-weight: 700;
+}
+
+.gitHub-link,
+.email-link,
+.facebook-link,
+.linkedin-link {
+  text-decoration: none;
+  background: -webkit-linear-gradient(101deg, #1daf7c, #9900b4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+   font-family: var(--heading-font-family);
+  font-weight: 700;
+  font-size: 35px;
+  margin-bottom: 30px;
 }
 
 h1:hover {
@@ -260,6 +278,10 @@ p {
   font-family: var(--secondary-font-family);
   font-size: 14px;
   text-align: center;
+}
+
+#text-header{
+  font-size: 32px;
 }
 
 @media (max-width: 900px) {
