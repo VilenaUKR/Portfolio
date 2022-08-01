@@ -147,12 +147,12 @@ h3 {
 }
 
 .border#project-description{
-  border-width: 4px!important;
-  color: opacity(0.8);
+  border-width: 5px!important;
+ border-color: #d5cbd7!important;
 }
 
 .project-img-bg {
-  border: solid 7px transparent;
+  border: solid 5px transparent;
   background-image: url(/src/images/body.png), linear-gradient(rgba(255, 10, 10, 0), rgba(255, 255, 255, 0)),
     linear-gradient(250deg, #79cc9e 0%,
     #89bcbc 25%,
