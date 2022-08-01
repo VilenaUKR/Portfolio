@@ -16,7 +16,7 @@ body {
      border-image: linear-gradient(to left,#79cc9e 0%,#beedec 25%,#c5ceff 50%,#cabd96 75%,#b591c7 100%);
  border-image-slice:1;
      border-bottom: 1px solid #ccc;
-    background-color: #fff;
+    background-color: rgb(230, 250, 250);
     box-shadow: 0 0.15em 0.35em 0 rgb(0 0 0 / 14%);
     transform: translate3d(0, 0, 0);
      box-sizing: border-box;
