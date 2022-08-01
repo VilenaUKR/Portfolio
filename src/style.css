@@ -53,34 +53,20 @@ h1 {
   font-size: 75px;
 }
 
-.row#contacts{
-  display: flex;
-  flex-direction: column;
-   font-size: 30px;
-  color: #272142;
-   font-family: var(--heading-font-family);
-  font-weight: 700;
-}
-
-.gitHub-link,
-.email-link,
-.facebook-link,
-.linkedin-link {
-  text-decoration: none;
-  background: -webkit-linear-gradient(101deg, #1daf7c, #9900b4);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-   font-family: var(--heading-font-family);
-  font-weight: 700;
-  font-size: 35px;
-  margin-bottom: 30px;
-}
-
 h1:hover {
   background: -webkit-linear-gradient(101deg, #1daf7c, #9900b4);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   cursor: pointer;
+}
+
+#header-linkedin-link{
+  color: var(--main-color);
+   text-decoration: none;
+}
+
+#header-linkedin-link:hover{
+ opacity: 0.8;
 }
 
 h2 {
@@ -137,7 +123,7 @@ h3 {
 .projects {
   margin-top: 250px;
   opacity: 0;
-  animation: ani 0s ease-in-out forwards 0s;
+  animation: ani 2s ease-in-out forwards 4s;
 }
 
 @keyframes ani {
@@ -177,11 +163,21 @@ h3 {
   text-align: center;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
+
 .project-img-bg {
   border: solid 10px transparent;
   background-image: url(/src/images/body.png),
     linear-gradient(rgba(255, 10, 10, 0), rgba(255, 255, 255, 0)),
     linear-gradient(101deg, #bb85c8, #84baa7);
+  background-origin: border-box;
+  border-radius: 10px;
+}
+
+.project-img-bg2 {
+  border: solid 10px transparent;
+  background-image: 
+    linear-gradient(rgba(255, 10, 10, 0), rgba(255, 255, 255, 0)),
+    linear-gradient(101deg, #f9e6fe, #dbfbf0);
   background-origin: border-box;
   border-radius: 10px;
 }
@@ -217,27 +213,26 @@ p {
   margin-top: 50px;
   padding: 14px 25px;
   border-radius: 30px;
-  box-shadow: 2px 100px 1px rgb(238, 250, 248) inset;
+  box-shadow: 2px 1px 100px rgb(238, 250, 248) inset;
   border: solid 3px transparent;
   background-image: linear-gradient(
       rgba(255, 10, 10, 0),
       rgba(255, 255, 255, 0)
     ),
-    linear-gradient(101deg, #b26fc3, #7abaa4);
+    linear-gradient(101deg, #bd8bca, #9ccebc);
   background-origin: border-box;
 }
 
 .primary-link:hover {
   box-shadow: 0px 0px 0px rgb(231, 248, 245) inset;
-  border: solid 5px transparent;
-  letter-spacing: 2px;
-  background-image: linear-gradient(
+   background-image: linear-gradient(
       rgba(255, 10, 10, 0),
       rgba(255, 255, 255, 0)
     ),
-    linear-gradient(101deg, #b26fc3, #7abaa4);
-  color: rgb(192, 251, 244);
-}
+    linear-gradient(101deg, #b77ac6, #83bba7);
+    color: var(--main-color);
+    opacity: 0.8;
+ }
 
 #hero-img {
   display: block;
@@ -283,6 +278,79 @@ p {
 #text-header{
   font-size: 32px;
 }
+
+.row#contacts{
+  display: flex;
+  flex-direction: column;
+   font-size: 30px;
+  color: #272142;
+   font-family: var(--heading-font-family);
+  font-weight: 700;
+}
+
+.gitHub-link,
+.email-link,
+.facebook-link,
+.linkedin-link {
+  text-decoration: none;
+  background: -webkit-linear-gradient(101deg, #1daf7c, #9900b4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+   font-family: var(--heading-font-family);
+  font-weight: 700;
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+
+.gitHub-link:hover,
+.email-link:hover,
+.facebook-link:hover,
+.linkedin-link:hover {
+  opacity: 0.7;
+}
+
+#btn-follow-projects{
+  text-decoration: none;
+  font-family: var(--default-font-family);
+  color: var(--main-color);
+   }
+
+  #par-follow-projects{
+ font-weight: 500;
+  font-size: 17px;
+  padding: 1px;
+    }
+
+    .secondary-link {
+  font-weight: 500;
+  font-size: 17px;
+  text-align: center;
+  text-decoration: none;
+  color: var(--main-color);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  padding: 2px 2px;
+  border-radius: 8px;
+  box-shadow: 1px 1px 100px rgb(238, 250, 248) inset;
+  border: solid 2px transparent;
+  background-image: linear-gradient(
+      rgba(255, 10, 10, 0),
+      rgba(255, 255, 255, 0)
+    ),
+    linear-gradient(101deg, #b26fc3, #7abaa4);
+  background-origin: border-box;
+}
+
+.secondary-link:hover {
+  box-shadow: 0px 0px 0px rgb(231, 248, 245) inset;
+   background-image: linear-gradient(
+      rgba(255, 10, 10, 0),
+      rgba(255, 255, 255, 0)
+    ),
+    linear-gradient(101deg, #b26fc3, #7abaa4);
+    opacity: 0.9;
+  }
 
 @media (max-width: 900px) {
   .welcome {
@@ -353,6 +421,22 @@ p {
     font-size: 11px;
     margin: 0 auto;
   }
+
+#text-header{
+  font-size: 25px;
+}
+
+.row#contacts{
+     font-size: 25px;
+}
+
+.gitHub-link,
+.email-link,
+.facebook-link,
+.linkedin-link {
+  font-size: 33px;
+}
+
 }
 
 @media (max-width: 768px) {
