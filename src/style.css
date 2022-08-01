@@ -10,36 +10,6 @@ body {
   color: var(--main-color);
 }
 
-.welcome {
-  position: absolute;
-  text-align: center;
-  right: 0%;
-  left: 0%;
-  font-family: var(--heading-font-family);
-  font-weight: 700;
-  font-size: 150px;
-  letter-spacing: 1px;
-  width: auto;
-  opacity: 0;
-  animation: an 4s ease-in-out;
-}
-
-@keyframes an {
-  100% {
-    opacity: 0.8;
-  }
-  from {
-    background: -webkit-linear-gradient(101deg, #1daf7c, #9a17b1);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  to {
-    background: -webkit-linear-gradient(101deg, #01a66c, #85019c);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-}
-
 .hero {
   margin-top: 120px;
   text-align: center;
@@ -89,7 +59,7 @@ h2,
 h3 {
   letter-spacing: 1px;
   opacity: 0;
-  animation: ani 2s ease-in-out forwards 4s;
+  animation: ani 2s ease-in-out forwards 0s;
 }
 
 @keyframes ani {
@@ -108,7 +78,7 @@ h3 {
 
 #about-hero-link {
   opacity: 0;
-  animation: anim 2s forwards 5.5s;
+  animation: anim 2s forwards 1s;
 }
 
 @keyframes anim {
@@ -123,7 +93,7 @@ h3 {
 .projects {
   margin-top: 250px;
   opacity: 0;
-  animation: ani 2s ease-in-out forwards 4s;
+  animation: ani 2s ease-in-out forwards 1s;
 }
 
 @keyframes ani {
