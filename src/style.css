@@ -450,6 +450,11 @@ footer .linkedin-link {
   .linkedin-link {
     font-size: 33px;
   }
+
+  #footer{
+   font-size: 14px;
+}
+
 }
 
 @media (max-width: 768px) {
