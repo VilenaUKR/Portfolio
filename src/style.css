@@ -14,18 +14,20 @@ body {
   border-image-width: 0 0 3px 0 !important;
   -webkit-border-image: -webkit-linear-gradient(
     to left,
-   #79cc9e 0%,
+    #79cc9e 0%,
     #89bcbc 25%,
     #bb9eea 50%,
     #ca96b9 75%,
-    #c791c4 100%);
+    #c791c4 100%
+  );
   border-image: linear-gradient(
     to left,
- #79cc9e 0%,
+    #79cc9e 0%,
     #89bcbc 25%,
     #bb9eea 50%,
     #ca96b9 75%,
-    #c791c4 100%);
+    #c791c4 100%
+  );
   border-image-slice: 1;
   border-bottom: 1px solid #ccc;
   background-color: rgb(230, 250, 250);
@@ -45,13 +47,13 @@ body {
 .navbar-toggler:hover,
 .navbar-brand:hover,
 .nav-link:hover {
-opacity: 0.8;
+  opacity: 0.8;
 }
 
 .navbar-toggler {
   background: -webkit-linear-gradient(101deg, #d3f4e8, #f2d9f7);
   -webkit-text-fill-color: transparent;
-   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2)
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .nav-link.active {
@@ -109,7 +111,7 @@ h3 {
   }
 }
 
-#about-hero-link{
+#about-hero-link {
   animation: anim 2.5s ease-in-out forwards 0s;
 }
 
@@ -124,7 +126,7 @@ h3 {
 
 .header {
   margin-bottom: 20px;
-  margin-top: 60px!important;
+  margin-top: 60px !important;
   font-family: var(--heading-font-family);
   font-weight: 800;
   font-size: 50px;
@@ -140,26 +142,30 @@ h3 {
 
 #project-description {
   background-image: url(/src/images/pngkey.com-diamond-background-png-7641244.png);
-   background-origin: border-box;
+  background-origin: border-box;
   border-radius: 10px;
   text-align: center;
   font-family: Georgia, "Times New Roman", Times, serif;
   box-shadow: 5px 7px 15px rgba(0, 0, 0, 0.3) !important;
 }
 
-.border#project-description{
-  border-width: 5px!important;
- border-color: #d5cbd7!important;
+.border#project-description {
+  border-width: 5px !important;
+  border-color: #d5cbd7 !important;
 }
 
 .project-img-bg {
   border: solid 5px transparent;
-  background-image: url(/src/images/body.png), linear-gradient(rgba(255, 10, 10, 0), rgba(255, 255, 255, 0)),
-    linear-gradient(250deg, #79cc9e 0%,
-    #89bcbc 25%,
-    #bb9eea 50%,
-    #ca96b9 75%,
-    #c791c4 100%);
+  background-image: url(/src/images/body.png),
+    linear-gradient(rgba(255, 10, 10, 0), rgba(255, 255, 255, 0)),
+    linear-gradient(
+      250deg,
+      #79cc9e 0%,
+      #89bcbc 25%,
+      #bb9eea 50%,
+      #ca96b9 75%,
+      #c791c4 100%
+    );
   background-origin: border-box;
   border-radius: 10px;
   box-shadow: 5px 7px 15px rgba(0, 0, 0, 0.3) !important;
@@ -203,8 +209,8 @@ p {
   color: var(--main-color);
   font-family: Georgia, "Times New Roman", Times, serif;
   letter-spacing: 1px;
-   box-shadow: 1px 1px 100px rgb(238, 250, 248) inset;
-    background-image: linear-gradient(
+  box-shadow: 1px 1px 100px rgb(238, 250, 248) inset;
+  background-image: linear-gradient(
       rgba(255, 10, 10, 0),
       rgba(255, 255, 255, 0)
     ),
@@ -245,15 +251,6 @@ p {
   cursor: pointer;
 }
 
-.icons-header {
-  font-family: var(--heading-font-family);
-  font-weight: 700;
-  font-size: 2px;
-  letter-spacing: 1px;
-  background: -webkit-linear-gradient(101deg, #028063, #b0029e);
-  -webkit-text-fill-color: transparent;
-}
-
 .icons {
   display: flex;
   justify-content: space-evenly;
@@ -264,14 +261,14 @@ p {
   text-align: center;
 }
 
-#text-header-homepage{
-   margin-top: 250px!important; 
+#text-header-homepage {
+  margin-top: 250px !important;
 }
 
 #text-header {
-   margin-top: 30px;   
-   margin-bottom: 30px;
-   font-size: 32px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 32px;
 }
 
 .row#contacts {
@@ -305,7 +302,7 @@ p {
 }
 
 #facebook-link {
-  margin-bottom: 93px!important;
+  margin-bottom: 93px !important;
 }
 
 #btn-follow-projects {
@@ -314,7 +311,7 @@ p {
   color: var(--main-color);
 }
 
-.btn-shadow{
+.btn-shadow {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3) !important;
   border-radius: 10px;
 }
@@ -326,7 +323,7 @@ p {
 }
 
 .secondary-link {
-   font-weight: 500;
+  font-weight: 500;
   font-size: 17px;
   text-align: center;
   text-decoration: none;
@@ -360,48 +357,48 @@ footer .gitHub-link,
 footer .email-link,
 footer .facebook-link,
 footer .linkedin-link {
-  margin-bottom: 0px!important;
+  margin-bottom: 0px !important;
   font-size: 20px;
 }
 
-#footer{
-   text-decoration: none;
+#footer {
+  text-decoration: none;
   background: -webkit-linear-gradient(101deg, #199a6d, #85019c);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-   font-size: 18px;
+  font-size: 18px;
 }
 
-.footer-contact-page{
-  font-size: 20px!important;
+.footer-contact-page {
+  font-size: 20px !important;
   text-align: center;
- }
+}
 
 #gitHub-link {
-  text-decoration: underline!important;
- background: -webkit-linear-gradient(101deg, #199a6d, #85019c);
+  text-decoration: underline !important;
+  background: -webkit-linear-gradient(101deg, #199a6d, #85019c);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 #gitHub-link:hover {
-opacity: 0.8;
+  opacity: 0.8;
 }
 
 @media (max-width: 900px) {
-  body{
+  body {
     padding: 7px;
   }
-  
-.navbar-brand,
-.nav-link {
-  font-weight: 500;
-  font-size: 17px;
-}
 
-.navbar-toggler {
- font-size: 85%;
-}
+  .navbar-brand,
+  .nav-link {
+    font-weight: 500;
+    font-size: 17px;
+  }
+
+  .navbar-toggler {
+    font-size: 85%;
+  }
 
   .hero {
     text-align: center;
@@ -415,11 +412,23 @@ opacity: 0.8;
 
   h2 {
     font-size: 28px;
+    margin-top: 100px;
   }
 
   h3 {
     margin-top: 20px;
     font-size: 28px;
+  }
+
+  h1,
+  h2,
+  h3 {
+    opacity: 1;
+    animation: ani 2s ease-in-out forwards 0s;
+  }
+
+  #about-hero-link {
+    animation: none;
   }
 
   .header {
@@ -430,6 +439,7 @@ opacity: 0.8;
 
   #project-description {
     margin-top: 20px;
+    width: 96%;
   }
 
   .project-img-bg {
@@ -454,21 +464,13 @@ opacity: 0.8;
     width: 70%;
   }
 
-  .icons-header {
-    margin-top: 30px;
-    margin-bottom: 20px;
-    font-weight: 700;
-    font-size: 25px;
-    letter-spacing: 1px;
-  }
-
   .icons {
     font-size: 11px;
   }
 
-#text-header-homepage{
-   margin-top: 290px!important; 
-}
+  #text-header-homepage {
+    margin-top: 40px !important;
+  }
 
   #text-header {
     font-size: 25px;
@@ -485,13 +487,32 @@ opacity: 0.8;
     font-size: 33px;
   }
 
-  #footer{
-   font-size: 16px;
-}
-
+  #footer {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 768px) {
+  .header {
+    font-size: 35px;
+  }
+
+  h1 {
+    font-size: 30px;
+    margin-top: 20px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+
+  #project-description {
+    width: 94%;
+  }
   .icons {
     font-size: 11px;
     margin: 0 auto;
@@ -501,8 +522,83 @@ opacity: 0.8;
     margin-top: 7px;
   }
 
-   #footer{
-   font-size: 15px;
+  #footer {
+    font-size: 15px;
+  }
 }
 
+@media (max-width: 395px) {
+  #facebook-link {
+    margin-bottom: 30px !important;
+  }
+}
+
+@media (width: 768px) {
+  .description-me {
+    margin-bottom: 70px !important;
+  }
+
+  .description-me .container {
+    margin-top: 60px !important;
+  }
+
+  .icons {
+    margin-top: 30px;
+  }
+
+  footer {
+    margin-top: 80px !important;
+  }
+
+  #facebook-link {
+    margin-bottom: 200px !important;
+  }
+}
+
+@media (width: 820px) {
+  .description-me {
+    margin-bottom: 160px !important;
+  }
+
+  .description-me .container {
+    margin-top: 70px !important;
+  }
+
+  .icons {
+    margin-top: 60px;
+  }
+
+  footer {
+    margin-top: 80px !important;
+  }
+
+  #facebook-link {
+    margin-bottom: 330px !important;
+  }
+}
+
+@media (width: 912px) {
+  .description-me {
+    margin-bottom: 125px !important;
+  }
+
+  .description-me .container {
+    margin-top: 70px !important;
+  }
+
+  .icons {
+    margin-top: 60px;
+  }
+
+  footer {
+    margin-top: 80px !important;
+  }
+
+  #text-header-homepage {
+    margin-top: 120px !important;
+  }
+
+  #facebook-link {
+    margin-bottom: 450px !important;
+  }
 }
