@@ -94,8 +94,8 @@ h1,
 h2,
 h3 {
   letter-spacing: 1px;
-  opacity: 1;
-  animation: ani 0s ease-in-out forwards 0s;
+  opacity: 0;
+  animation: ani 2s ease-in-out forwards 0s;
 }
 
 .description-me h3 {
