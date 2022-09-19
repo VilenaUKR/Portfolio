@@ -275,7 +275,7 @@ p {
 
 .icons {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: row;
   margin-top: 20px;
   color: var(--main-color);
   font-family: var(--secondary-font-family);
@@ -373,6 +373,10 @@ p {
     ),
     linear-gradient(101deg, #b26fc3, #7abaa4);
   opacity: 0.9;
+}
+
+.about-me-icons {
+  width: fit-content;
 }
 
 footer .gitHub-link,
